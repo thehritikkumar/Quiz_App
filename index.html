@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="container">
+
+            <div class="landing-page">
+                <img src="https://cdn-icons-png.flaticon.com/512/2958/2958990.png" alt="">
+                <h1>Quiz App</h1>
+                <div class="line"></div>
+                <p>Test your knowledge with this app!</p>
+                <button onclick="showGameCategory()">Play Now!</button>
+            </div>
+
+            <div class="game-category" style="display: none;">
+                <h1>Choose Your Settings</h1>
+                <div class="line"></div>
+                <div>
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="9">General Knowledge</option>
+                        <option value="17">Science and Nature</option>
+                        <option value="19">Science Mathematics</option>
+                        <option value="22">Geography</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="numOfQuestions">Number of Questions:</label>
+                    <input type="number" id="numOfQuestions" min="1" max="50" value="10">
+                </div>
+                <br>
+                <div>
+                    <label for="difficulty">Difficulty:</label>
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="questionsType">Type of Questions:</label>
+                    <select id="questionsType">
+                        <option value="multiple">Multiple Choice</option>
+                        <option value="boolean">True / False</option>
+                    </select>
+                </div>
+                <br>
+                <button onclick="showQuiz()">Start Quiz</button>
+            </div>
+
+            <div class="quiz" style="display: none;">
+                <h2 id="question"></h2>
+                <div id="options-container"></div>
+                <button class="restart-game" onclick="showLandingPage()">Restart Game</button>
+            </div>
+
+            <div class="result" style="display: none;">
+                <h2>Quiz Completed!</h2>
+                <p id="correct-count"></p>
+                <p id="incorrect-count"></p>
+                <button  onclick="showLandingPage()">Restart</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./selection.js"></script>
+    <script src="./question.js"></script>
+    <script src="./result.js"></script>
+</body>
+
+</html>

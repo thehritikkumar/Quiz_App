@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    padding: 20px;
+}
+
+.landing-page,
+.game-category,
+.quiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #333333;
+}
+
+.landing-page {
+    height: 700px;
+}
+
+.landing-page > img {
+    width: 90px;
+}
+
+.landing-page > h1 {
+    font-size: 60px;
+    color: #4a90e2;
+}
+
+.line {
+    width: 200px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+}
+
+.landing-page > p {
+    font-size: 18px;
+    margin: 80px 10px 30px 10px;
+    color: #666666;
+}
+
+.landing-page > button,
+.game-category > button,
+.quiz > button,
+.option {
+    padding: 10px;
+    color: #ffffff;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #4a90e2;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-page > button:hover,
+.game-category > button:hover,
+.quiz > button:hover,
+.option:hover {
+    background-color: #357ab8;
+}
+
+.category-options,
+#options-container {
+    margin-top: 40px;
+}
+
+.game-category {
+    height: auto;
+}
+
+.game-category > h1 {
+    font-size: 35px;
+    color: #4a90e2;
+}
+
+.game-category select,
+.game-category input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+.game-category select:focus,
+.game-category input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.quiz > h2 {
+    font-size: 24px;
+    margin: 10px;
+    color: #4a90e2;
+}
+
+.option {
+    background-color: #4a90e2;
+    width: 300px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.restart-game,
+.result button  {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    color: #ffffff;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background-color: #4a90e2;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    transition: background-color 0.3s ease;
+}
+
+.restart-game:hover {
+    background-color: #357ab8;
+}
